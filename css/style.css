@@ -1,0 +1,65 @@
+header {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#header-bar {
+  border-bottom: 120px solid #FFE102;
+  border-left: 200px solid #1BE5FF;
+}
+
+nav {
+  text-align: right;
+  margin-top: -85px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  display: inline;
+  margin: 14px;
+  padding: 5px;
+}
+
+.name {
+  font-size: 80px;
+  color: #FFF;
+  border-left: 2px solid white;  
+}
+
+.subheader {
+  font-size: 60px;
+  color: #6E6E6E;
+}
+
+a {
+  text-decoration: none;
+}
+
+.name a:link {
+  color: #fff;
+}
+
+.name a:visited {
+  color: #fff;
+}
+
+.subheader a:link {
+  color: #6E6E6E;
+}
+
+.subheader a:visited {
+  color: #6E6E6E;
+}
+
+.name a:hover, .subheader a:hover {
+  color: #41BCD1;
+}
+
+p {
+  font-size: 40px;
+}
+
+.instagram {
+  fill: #1BE5FF;
+}
+
