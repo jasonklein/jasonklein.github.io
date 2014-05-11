@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #FBFBFB;
+  background-color: #FCFCFC;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
@@ -15,7 +20,6 @@ header {
 nav {
   text-align: right;
   margin-top: -85px;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
@@ -33,6 +37,10 @@ h1 {
 .subheader {
   font-size: 60px;
   color: #6E6E6E;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 a {
@@ -60,16 +68,43 @@ a {
 }
 
 #ebhf {
-  max-width: 800px;
-  margin: 100px;
+  max-width: 1000px;
+  margin: 100px auto;
   color: #6E6E6E;
+}
+
+#icons-container {
+  max-width: 500px;
+  float: left;
+}
+
+#content-container {
+  max-width: 400px;
+  float: right;
+}
+
+#content-container h2 {
+  margin-bottom: 30px;
+}
+
+.icon-box {
+  display: inline-block;
+  max-width: 120px;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
 }
 
 .icon {
   fill: #1BE5FF;
 }
 
-#icon-box hr {
-  color: black;
-  width: 10%;
+.icon-name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  min-height: 200px;
 }
