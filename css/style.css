@@ -1,3 +1,7 @@
+body {
+  background-color: #FBFBFB;
+}
+
 header {
   position: relative;
   margin-bottom: 50px;
@@ -23,7 +27,7 @@ h1 {
 .name {
   font-size: 80px;
   color: #FFF;
-  border-left: 2px solid white;  
+  border-left: 2px solid #F2F2F2;  
 }
 
 .subheader {
@@ -55,11 +59,17 @@ a {
   color: #41BCD1;
 }
 
-p {
-  font-size: 40px;
+#ebhf {
+  max-width: 800px;
+  margin: 100px;
+  color: #6E6E6E;
 }
 
-.instagram {
+.icon {
   fill: #1BE5FF;
 }
 
+#icon-box hr {
+  color: black;
+  width: 10%;
+}
