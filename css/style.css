@@ -3,8 +3,9 @@
 }
 
 body {
-  background-color: #FCFCFC;
+  background-color: #F2F2F2;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
 }
 
 header {
@@ -26,21 +27,20 @@ h1 {
   display: inline;
   margin: 14px;
   padding: 5px;
-}
-
-.name {
   font-size: 80px;
   color: #FFF;
-  border-left: 2px solid #F2F2F2;  
+  border-left: 2px solid #F2F2F2;
 }
 
-.subheader {
-  font-size: 60px;
-  color: #6E6E6E;
-}
 
 h2 {
-  font-size: 40px;
+  display: inline;
+  font-size: 50px;
+  color: #7F7F7F;
+}
+
+h3 {
+  font-size: 35px;
 }
 
 a {
@@ -69,17 +69,17 @@ a {
 
 #ebhf {
   max-width: 1000px;
-  margin: 100px auto;
+  margin: 100px auto 100px auto;
   color: #6E6E6E;
 }
 
 #icons-container {
-  max-width: 500px;
+  max-width: 550px;
   float: left;
 }
 
 #content-container {
-  max-width: 400px;
+  max-width: 450px;
   float: right;
 }
 
@@ -100,11 +100,18 @@ a {
 }
 
 .icon-name {
-  font-size: 20px;
   margin-top: 10px;
 }
 
+#email {
+  line-height: 1;
+}
+
+p {
+  margin: 5px 5px 5px 0;
+}
+
 footer {
-  width: 100%;
-  min-height: 200px;
+  margin-top: 600px;
+  height: 200px;
 }

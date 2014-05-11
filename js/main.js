@@ -7,18 +7,26 @@ PersonalSite.showContent = function(content) {
   if ($("#twitter").data('state') === 'visible'){
     $("#twitter-content").slideDown(800);
   }
+
+  if ($("#email").data('state') === 'visible'){
+    $("#email-form").slideDown(800);
+  }
 };
 
 PersonalSite.hideContent = function(content) {
   content.data('state', 'hidden');
   content.slideUp();
-  $("#twitter-content").slideUp();
   if ($("#twitter").data('state') === 'hidden'){
     $("#twitter-content").slideUp(800);
+  }
+
+  if ($("#email").data('state') === 'hidden'){
+    $("#email-form").slideUp(800);
   }
 };
 
 PersonalSite.toggleContent = function() {
+  console.log(this);
   var content = $(this).find(".icon-name");
   if (content.data('state') === 'hidden') {
     PersonalSite.showContent(content);
@@ -30,8 +38,11 @@ PersonalSite.toggleContent = function() {
 PersonalSite.setup = function() {
   $(".icon-name").data('state', 'hidden').hide();
   $("#twitter-content").hide();
+  $("#email-form").hide();
   $(".icon-box").click(PersonalSite.toggleContent);
 };
+
+
 
 
 
