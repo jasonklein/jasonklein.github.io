@@ -5,7 +5,7 @@
 body {
   background-color: #F2F2F2;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 header {
@@ -69,7 +69,7 @@ a {
 
 #ebhf {
   max-width: 1000px;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
   color: #6E6E6E;
 }
 
@@ -79,7 +79,7 @@ a {
 }
 
 #content-container {
-  max-width: 450px;
+  max-width: 420px;
   float: right;
 }
 
@@ -109,6 +109,15 @@ a {
 
 p {
   margin: 5px 5px 5px 0;
+  line-height: 1.1;
+}
+
+#about-content p {
+  text-align: justify;
+}
+
+span {
+  color: #19D7F0;
 }
 
 footer {
