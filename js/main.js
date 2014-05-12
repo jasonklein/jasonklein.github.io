@@ -4,12 +4,17 @@ var PersonalSite = PersonalSite || {};
 PersonalSite.showContent = function(content) {
   content.data('state', 'visible');
   content.slideDown();
+
   if ($("#twitter").data('state') === 'visible'){
     $("#twitter-content").slideDown(700);
   }
 
   if ($("#about").data('state') === 'visible'){
     $("#about-content").slideDown(700);
+  }
+
+  if ($("#projects").data('state') === 'visible'){
+    $("#projects-content").slideDown(900);
   }
 
 };
@@ -23,6 +28,10 @@ PersonalSite.hideContent = function(content) {
 
   if ($("#about").data('state') === 'hidden'){
     $("#about-content").slideUp(700);
+  }
+
+  if ($("#projects").data('state') === 'hidden'){
+    $("#projects-content").slideUp(900);
   }
 
 };
@@ -41,9 +50,12 @@ PersonalSite.setup = function() {
   $(".icon-name").data('state', 'hidden').hide();
   $("#twitter-content").hide();
   $("#about-content").hide();
+  $("#projects-content").hide();
   $(".icon-box").click(PersonalSite.toggleContent);
 };
 
 $(PersonalSite.setup);
+
+
 
 
