@@ -8,10 +8,6 @@ PersonalSite.showContent = function(content) {
     $("#twitter-content").slideDown(700);
   }
 
-  if ($("#email").data('state') === 'visible'){
-    $("#email-form").slideDown(700);
-  }
-
   if ($("#about").data('state') === 'visible'){
     $("#about-content").slideDown(700);
   }
@@ -23,10 +19,6 @@ PersonalSite.hideContent = function(content) {
   content.slideUp();
   if ($("#twitter").data('state') === 'hidden'){
     $("#twitter-content").slideUp(700);
-  }
-
-  if ($("#email").data('state') === 'hidden'){
-    $("#email-form").slideUp(700);
   }
 
   if ($("#about").data('state') === 'hidden'){
@@ -48,7 +40,6 @@ PersonalSite.toggleContent = function() {
 PersonalSite.setup = function() {
   $(".icon-name").data('state', 'hidden').hide();
   $("#twitter-content").hide();
-  $("#email-form").hide();
   $("#about-content").hide();
   $(".icon-box").click(PersonalSite.toggleContent);
 };
