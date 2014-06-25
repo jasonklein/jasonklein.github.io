@@ -9,20 +9,16 @@ body {
 }
 
 header {
-  position: relative;
-  margin-bottom: 50px;
+  background-color: #FFE102;
+  min-height: 80px;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
 }
 
-#header_bar {
-  border-bottom: 120px solid #FFE102;
-  border-left: 200px solid #1BE5FF;
+#title {
+  float: right;
 }
-
-#header_label {
-  text-align: right;
-  margin-top: -85px;
-}
-
 
 h1 {
   display: inline;
@@ -30,13 +26,17 @@ h1 {
   padding: 5px;
   font-size: 80px;
   color: #FFF;
-  border-left: 2px solid #F2F2F2;
+}
+
+h2, h3, h4 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 60px;
   color: #1BE5FF;
-  text-align: center;
 }
 
 
@@ -48,14 +48,12 @@ h3 {
 
 h4 {
   font-size: 30px;
-  text-align: center;
 }
 
 a {
   text-decoration: none;
-  vertical-align: middle;
-  margin: 0 auto;
-}
+/*  vertical-align: middle;
+*/}
 
 a:link {
   color: #19D7F0;
@@ -75,16 +73,13 @@ nav {
   z-index: 9999;
   width: 100%;
   background: white;
-  min-height: 40px;
-}
-
-ul {
-  vertical-align: middle;
+  padding-top: 15px;
+  min-height: 50px;
 }
 
 .item-box {
   border: 2px solid #FFE102;
-  padding: 20px 40px;
+  padding: 60px 40px;
   margin: 30px 0;
 }
 
@@ -98,6 +93,11 @@ ul {
   -moz-transition: all 800ms ease-in-out;
   -o-transition: all 800ms ease-in-out;
   transition: all 800ms ease-in-out;
+}
+
+.welcome {
+  min-height: 400px;
+  padding-top: 100px;
 }
 
 p {
@@ -119,12 +119,24 @@ p {
   opacity: 1;
 }
 
-p.project-description {
+.project-description {
   max-width: 300px;
   margin: 10px auto;
 }
 
+.centered {
+  text-align: center;
+}
+
 .push {
-  height: 320px;
+  height: 150px;
+}
+
+.header-push {
+  height: 140px;
+}
+
+.inner-push {
+  height: 100px;
 }
 
