@@ -16,6 +16,16 @@ header {
   width: 100%;
 }
 
+#navlinks {
+  float: left;
+  margin-left: 50px;
+  padding-top: 35px;
+}
+
+#navlinks a {
+  margin-right: 50px;
+}
+
 #title {
   float: right;
 }
@@ -52,8 +62,7 @@ h4 {
 
 a {
   text-decoration: none;
-/*  vertical-align: middle;
-*/}
+}
 
 a:link {
   color: #19D7F0;
@@ -65,16 +74,6 @@ a:visited {
 
 a:hover {
   color: #1BE5FF;
-}
-
-nav {
-  bottom: 0px;
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  background: white;
-  padding-top: 15px;
-  min-height: 50px;
 }
 
 .item-box {
@@ -124,12 +123,16 @@ p {
   margin: 10px auto;
 }
 
+.mobile-project-description {
+  display: none;
+}
+
 .centered {
   text-align: center;
 }
 
 .push {
-  height: 150px;
+  height: 80px;
 }
 
 .header-push {
@@ -138,5 +141,78 @@ p {
 
 .inner-push {
   height: 100px;
+}
+
+@media only screen and (max-width: 64em) {
+  header {
+    min-height: 50px;
+  }
+
+  #title {
+    float: right;
+  }
+
+  #navlinks {
+    display: none;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 0 5px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  #title h3 {
+    display: none;
+  }
+
+  .welcome {
+    min-height: 100px;
+    padding-top: 20px;
+  }
+
+  .item-box {
+    padding: 20px 10px;
+    margin: 10px 0;
+  }
+
+  .project-box {
+    display: block;
+    opacity: 1;
+    min-height: 200px;
+  }
+
+  .project-description {
+    display: none;
+  }
+
+  .mobile-project-description {
+    display: block;
+    text-align: left;
+  }
+
+  .header-push {
+    height: 110px;
+  }
+
+  .inner-push {
+    height: 60px;
+  }
+
+  #about-large-screens-only {
+    display: none;
+  }
+
 }
 
