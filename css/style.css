@@ -51,9 +51,12 @@ h2 {
 
 
 h3 {
-  display: inline;
   font-size: 45px;
   color: #7F7F7F;
+}
+
+h3.inline-title {
+  display: inline;
 }
 
 h4 {
@@ -115,12 +118,19 @@ p {
 
 .project-box {
   max-width: 350px;
-  min-height: 580px;
   margin: 10px auto;
   padding: 10px;
   text-align: center;
   border: 2px solid #FFF;
   opacity: 0.4;
+}
+
+.serious {
+  min-height: 580px;
+}
+
+.funsies {
+  min-height: 400px;
 }
 
 .project-box:hover{
