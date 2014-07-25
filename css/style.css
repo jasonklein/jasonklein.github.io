@@ -206,6 +206,18 @@ p {
     margin: 10px 0;
   }
 
+  .image-box {
+    height: 240px;
+    width: 240px;
+    padding-top: 15px;
+    margin-top: 0px;
+  }
+
+  .image-box img {
+    max-width: 200px;
+    height: auto;
+  }
+
   .project-box {
     display: block;
     opacity: 1;
