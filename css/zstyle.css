@@ -1,300 +1,44 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #DDE5FF;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  background: #00AE4C;
 }
 
-h1, h2 {
-  font-family: 'Permanent Marker', cursive;
-}
-
-h1 {
-  font-size: 75px;
-  margin: 0;
-  opacity: 0.8;
-  color: #46A3C9;
-}
-
-h2 {
-  font-size: 35px;
-  color: #4095B8;
-}
-
-h3 {
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-/* SVG Styling */
-
-svg {
-  margin-top: 80px;
-}
-
-.svg-color-1 {
-  fill: #F20074; /*Fuschia*/
-}
-
-.svg-color-2 {
-  fill: #FFDB1F; /*Goldenrod*/
-}
-
-.svg-color-3 {
-  fill: #14D7F0; /*Teal*/
-}
-
-.svg-color-4 {
-  fill: #3D3D3D; /*Dark Grey*/
-}
-
-/*
 header {
-  background-color: #FFE102;
-  min-height: 80px;
-  position: fixed;
-  z-index: 9999;
   width: 100%;
+  height: 500px;
 }
 
-#navlinks {
-  float: left;
-  margin-left: 50px;
-  padding-top: 35px;
-}
-
-#navlinks a {
-  margin-right: 50px;
-}
-
-#title {
-  float: right;
-}
-
-h1 {
-  display: inline;
-  margin: 14px;
-  padding: 5px;
-  font-size: 80px;
-  color: #FFF;
-}
-
-h2, h3, h4 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 60px;
-  color: #1BE5FF;
-}
-
-
-h3 {
-  display: inline;
-  font-size: 45px;
-  color: #7F7F7F;
-}
-
-h4 {
-  font-size: 30px;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:link {
-  color: #19D7F0;
-}
-
-a:visited {
-  color: #19D7F0;
-}
-
-a:hover {
-  color: #1BE5FF;
-}
-
-.item-box {
-  border: 2px solid #FFE102;
-  padding: 60px 40px;
-  margin: 30px 0;
-}
-
-.item-box:hover{
-  border: 2px solid #FFF;
-  background-color: #E3E3E3;
-}
-
-.item-box, .project-box {
-  -webkit-transition: all 800ms ease-in-out;
-  -moz-transition: all 800ms ease-in-out;
-  -o-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
-}
-
-.welcome {
-  min-height: 400px;
-  padding-top: 100px;
-}
-
-p {
-  margin: 10px 0;
-  text-align: justify;
-}
-
-.project-box {
-  max-width: 350px;
-  min-height: 580px;
-  margin: 10px auto;
-  padding: 10px;
-  text-align: center;
-  border: 2px solid #FFF;
-  opacity: 0.4;
-}
-
-.project-box:hover{
-  opacity: 1;
-}
-
-.project-description {
-  max-width: 300px;
-  margin: 10px auto;
-}
-
-.mobile-project-description {
-  display: none;
-}
-
-.centered {
-  text-align: center;
-}
-
-.push {
-  height: 80px;
-}
-
-.header-push {
-  height: 140px;
-}
-
-.inner-push {
-  height: 100px;
-}
-
-@media only screen and (max-width: 64em) {
-  header {
-    min-height: 50px;
-  }
-
-  #title {
-    float: right;
-  }
-
-  #navlinks {
-    display: none;
-  }
-
-  h1 {
-    font-size: 50px;
-    margin: 0 5px;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  h3 {
-    font-size: 30px;
-  }
-
-  h4 {
-    font-size: 20px;
-  }
-
-  #title h3 {
-    display: none;
-  }
-
-  .welcome {
-    min-height: 100px;
-    padding-top: 20px;
-  }
-
-  .item-box {
-    padding: 20px 10px;
-    margin: 10px 0;
-  }
-
-  .project-box {
-    display: block;
-    opacity: 1;
-    min-height: 200px;
-  }
-
-  .project-description {
-    display: none;
-  }
-
-  .mobile-project-description {
-    display: block;
-    text-align: left;
-  }
-
-  .header-push {
-    height: 110px;
-  }
-
-  .inner-push {
-    height: 60px;
-  }
-
-  #about-large-screens-only {
-    display: none;
-  }
-
-}*/
-
-.push {
-  height: 50px;
-}
-
-#about {
-  min-height: 400px;
-  background-color: blue;
-  border-radius: 10px;
-  color: #FFF;
-  padding: 10px;
-}
-
-#name-wrapper {
-  min-height: 400px;
-  background-color: blue;
-  background: url(../img/laughing-colorized.png);
-  background-size: 100% 100%;
-  border-radius: 10px;
-  text-align: right;
-  padding: 5px 10px 0 0;
-}
-
-#job-title {
-  margin-top: 40px;
-}
-
-/* Large Hexagon */
-
-.large-hexagon {
-  width: 400px;
-  height: 220px;
-  background: red;
-  position: relative;
+#header-left, #header-right {
   display: inline-block;
-  box-shadow: -10px 0 10px -5px #888888;
+  width: 50%;
+  height: 100%;
+}
+
+#header-left {
   text-align: center;
-  margin: 0 auto;
+}
+
+#header-left img {
+  height: 75%;
+  width: auto;
+}
+
+#header-right {
+  float: right;
+  text-align: right;
+}
+
+/* Typography */
+
+h1.contrast-backing {
+  display: inline-block;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 80px;
+  background: white;
+  color: #00AE4C;
+  padding: 10px;
+  margin: 20px -5px 20px 0;
+}
+
+h1.non-name {
+  text-transform: lowercase;
 }
