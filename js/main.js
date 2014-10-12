@@ -14,7 +14,10 @@ $(document).ready(function() {
 var PersonalSite = PersonalSite || {};
 
 PersonalSite.headerTextSliding = function() {
-  $(".initially-up").hide().delay(1000).slideDown(500, "linear");
+  $(".initially-up").hide();
+  $("header .initially-up").delay(700).slideDown(500, "linear", function() {
+    $("#navbar .initially-up").show();
+  });
 };
 
 PersonalSite.setup = function() {
