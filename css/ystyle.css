@@ -38,5 +38,14 @@ header {
 
 #underline {
   border-top: 5px solid #1596D2;
+  transition: all 2000ms;
+}
+
+.short {
+  width: 0;
+}
+
+.widen {
+  width: 100%;
 }
 
