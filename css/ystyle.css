@@ -1,0 +1,42 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+header {
+  margin-bottom: 200px;
+}
+
+.header-box {
+  margin-top: 150px;
+}
+
+#header-bike {
+  display: none;
+}
+
+#header-text #name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 250px;
+  padding: 0;
+}
+
+#header-text #sub-text {
+  margin: 60px auto 60px 15px;
+}
+
+#role, #goals {
+  font-size: 40px;
+}
+
+#text-bullet {
+  color: #FFF100;
+  margin: 0 15px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+#underline {
+  border-top: 5px solid #1596D2;
+}
+

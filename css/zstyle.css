@@ -1,5 +1,6 @@
 body {
-  background: #00AE4C;
+/*  background: #00AE4C;*/
+  background: #F5F5F5;
 }
 
 /* Typography */
@@ -65,10 +66,10 @@ h1#header-role {
 }
 
 .nav-title {
-  font-size: 55px;
-  color: #FFF;
+  font-size: 50px;
+  color: #00AE4C;
   font-family: 'Rokkitt', serif;
-  padding: 0;
+  padding: 5px;
   text-align: center;
   border: 2px solid #FFF;
 
@@ -80,7 +81,7 @@ h1#header-role {
 
 .nav-title:hover {
   background: #FFF;
-  color: #00AE4C;
+  color: #3C9BD2;
 }
 
 /* Main */
@@ -88,13 +89,28 @@ h1#header-role {
 main.row {
   margin-top: 30px;
   font-family: 'Open Sans', sans-serif;
+  padding: 15px;
+}
+
+main > div {
+  border: 2px solid #FFF;
+  padding: 10px;
 }
 
 main #this-guy-text {
-  border: 2px solid #FFF;
+/*  border: 2px solid #FFF;
   padding: 10px;
-  color: #FFF;
+*/  color: #3C9BD2;
   font-weight: 300;
+}
+
+main #selfie-wrapper {
+/*  padding: 10px;
+*/}
+
+main #selfie-wrapper img {
+  width: 100%;
+  height: auto;
 }
 
 
