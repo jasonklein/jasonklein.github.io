@@ -4,48 +4,54 @@ body {
 }
 
 header {
-  margin-bottom: 200px;
+  height: 100vh;
 }
 
-.header-box {
-  margin-top: 150px;
-}
 
 #header-bike {
-/*  display: none;*/
+  margin-top: 90px;
+  text-align: left;
+  display: none;
+}
+
+#header-bike img {
+  width: 80%;
+  height: auto;
+}
+
+#header-text {
+  margin-top: 150px;
 }
 
 #header-text #name {
   font-family: 'Oswald', sans-serif;
-  font-size: 250px;
+  font-size: 220px;
   padding: 0;
 }
 
-#header-text #sub-text {
-  margin: 60px auto 60px 15px;
+#sub-text-wrapper div {
+  display: inline-block;
 }
 
-#role, #goals {
+#header-text #sub-text {
+  margin: 60px auto 60px 10px;
+}
+
+#sub-text {
   font-size: 40px;
 }
 
-#text-bullet {
+#text-separator {
   color: #FFF100;
   margin: 0 15px;
-  font-size: 50px;
   font-weight: 400;
 }
 
 #underline {
-  border-top: 5px solid #1596D2;
-  transition: all 2000ms;
-}
-
-.short {
-  width: 0;
+  border-top: 5px solid #1A9BD5;
+  width: 100%;
 }
 
 .widen {
   width: 100%;
 }
-
