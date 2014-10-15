@@ -116,13 +116,11 @@ aside nav li {
 
 .text-box {
   border-style: solid;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
   padding: 15px;
 }
 
 .selfie {
-  border-width: 8px;
+  border-width: 6px;
   border-style: solid;
   padding: 0;
 }
@@ -130,11 +128,12 @@ aside nav li {
 /* This Guy - Basics */
 
 #basics-text {
-  border-color: #FFF100;
+  border-color: #1A9BD5;
+  border-top-width: 2px;
 }
 
 #color-box-basics {
-  background: #FFF100;
+  background: #1A9BD5;
 }
 
 .selfie img {
@@ -143,22 +142,39 @@ aside nav li {
 }
 
 #io-mayfields {
-  border-color: #FFF100;
+  border-color: #1A9BD5;
 }
 
 /* This Guy - Stack */
 
 #stack-text {
-  border-color: #1A9BD5;
-  border-left-width: 2px;
+  border-color: #00DE61;
 }
 
 #color-box-stack {
-  background: #1A9BD5;
+  background: #00DE61;
+}
+
+#io-upper-rideau {
+  border-color: #00DE61;
+  border-left-width: 1px;
+}
+
+/* This Guy - Hearts */
+
+#hearts-text {
+  border-color: #FFF100;
+  border-bottom-width: 2px;
+}
+
+#io-monaco {
+  border-color: #FFF100;
+  border-right-width: 3px;
 }
 
 #io-morgans {
-  border-color: #1A9BD5;
+  border-color: #FFF100;
+  border-left-width: 3px;
 }
 
 
