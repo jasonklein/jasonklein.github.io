@@ -1,7 +1,16 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  background: #F7F7F7;
 }
+
+/* General Typography */
+
+.name {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Header */
 
 header {
   height: 100vh;
@@ -23,8 +32,7 @@ header {
   margin-top: 150px;
 }
 
-#header-text #name {
-  font-family: 'Oswald', sans-serif;
+#header-text #header-name {
   font-size: 220px;
   padding: 0;
 }
@@ -55,3 +63,37 @@ header {
 .widen {
   width: 100%;
 }
+
+/* Main General */
+
+aside, #content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Aside */
+
+#aside-name {
+  font-size: 50px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #1A9BD5;
+}
+
+aside nav {
+  margin-left: 4px;
+}
+
+aside nav li {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.test {
+  font-weight: 400;
+}
+
+/* Content */
+
+
+

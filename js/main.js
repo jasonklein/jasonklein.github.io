@@ -24,13 +24,17 @@ PersonalSite.headerAppearance = function() {
   $(".initially-hide").hide();
   $("#underline").css("width", 0);
   $("#header-bike").show().delay(800).fadeOut("slow", function() {
-    $("#name").fadeIn(800, function() {
+    $("#header-name").fadeIn(800, function() {
       $("#sub-text-buddy").show();
       $("#underline").show();
       $("#underline").animate({width: "100%"}, 2000, function() {
-        $("#role").fadeIn(800, function() {
-          $("#text-separator").fadeIn(800, function() {
-            $("#goals").fadeIn(800);
+        $("#role").fadeIn(700, function() {
+          $("#text-separator").fadeIn(700, function() {
+            $("#goals").fadeIn(700, function() {
+              $("header .row").delay(600).fadeOut(function() {
+                $("header").delay(450).slideUp("slow")}
+              );
+            });
           });
         });
       });
