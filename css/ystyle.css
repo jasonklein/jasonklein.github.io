@@ -110,6 +110,8 @@ section p {
   margin-bottom: 10px;
 }
 
+/* This Guy - General */
+
 .this-guy-box {
   height: 250px;
 }
@@ -176,6 +178,63 @@ section p {
   border-color: #FFF100;
   border-left-width: 3px;
 }
+
+/* Projects - General */
+
+#projects div {
+  margin-bottom: 50px;
+  height: 312px;
+}
+
+.project-description {
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-style: solid;
+  padding: 15px;
+}
+
+.screenshots {
+  padding: 0;
+}
+
+.screenshots img {
+  width: 96%;
+  height: auto;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+/* Projects - trellisd */
+
+#trellisd-description {
+  border-color: #1A9BD5;
+}
+
+#trellisd-screenshots {
+  background: #1A9BD5;
+}
+
+/* Projects - Dev Jobs Tweets */
+
+#dev-jobs-tweets-description {
+  border-color: #00DE61;
+}
+
+#dev-jobs-tweets-screenshots {
+  background: #00DE61;
+}
+
+/* Projects - Daft Lighting */
+
+#daft-lighting-description {
+  border-color: #FFF100;
+}
+
+#daft-lighting-screenshots {
+  background: #FFF100;
+}
+
+
 
 
 
