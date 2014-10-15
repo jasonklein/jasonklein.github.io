@@ -66,7 +66,7 @@ header {
 
 /* Main General */
 
-aside, #content {
+aside {
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -94,6 +94,76 @@ aside nav li {
 }
 
 /* Content */
+
+#content {
+  margin-top: 100px;
+}
+
+#content h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+#content p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.this-guy-box {
+  height: 250px;
+}
+
+.text-box {
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  padding: 15px;
+}
+
+.selfie {
+  border-width: 8px;
+  border-style: solid;
+  padding: 0;
+}
+
+/* This Guy - Basics */
+
+#basics-text {
+  border-color: #FFF100;
+}
+
+#color-box-basics {
+  background: #FFF100;
+}
+
+.selfie img {
+  width: 100%;
+  height: 100%;
+}
+
+#io-mayfields {
+  border-color: #FFF100;
+}
+
+/* This Guy - Stack */
+
+#stack-text {
+  border-color: #1A9BD5;
+  border-left-width: 2px;
+}
+
+#color-box-stack {
+  background: #1A9BD5;
+}
+
+#io-morgans {
+  border-color: #1A9BD5;
+}
+
+
+
+
 
 
 
