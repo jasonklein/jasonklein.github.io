@@ -89,23 +89,23 @@ aside nav li {
   font-weight: 300;
 }
 
-.test {
-  font-weight: 400;
-}
-
 /* Content */
 
 #content {
   margin-top: 100px;
 }
 
-#content h2 {
+section {
+  margin-bottom: 200px;
+}
+
+section h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   margin-bottom: 30px;
 }
 
-#content p {
+section p {
   font-size: 20px;
   margin-bottom: 10px;
 }
