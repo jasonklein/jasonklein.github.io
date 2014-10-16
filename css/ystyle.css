@@ -102,12 +102,12 @@ section {
 section h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 section p {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 /* This Guy - General */
@@ -127,6 +127,12 @@ section p {
   padding: 0;
 }
 
+.selfie img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 /* This Guy - Basics */
 
 #basics-text {
@@ -138,13 +144,9 @@ section p {
   background: #1A9BD5;
 }
 
-.selfie img {
-  width: 100%;
-  height: 100%;
-}
-
 #io-mayfields {
   border-color: #1A9BD5;
+  background-color: #1A9BD5;
 }
 
 /* This Guy - Stack */
@@ -158,8 +160,9 @@ section p {
 }
 
 #io-upper-rideau {
-  border-color: #00DE61;
   border-left-width: 1px;
+  border-color: #00DE61;
+  background-color: #00DE61;
 }
 
 /* This Guy - Hearts */
@@ -170,13 +173,15 @@ section p {
 }
 
 #io-monaco {
-  border-color: #FFF100;
   border-right-width: 3px;
+  border-color: #FFF100;
+  background-color: #FFF100;
 }
 
 #io-morgans {
-  border-color: #FFF100;
   border-left-width: 3px;
+  border-color: #FFF100;
+  background-color: #FFF100;
 }
 
 /* Projects - General */
@@ -191,10 +196,12 @@ section p {
   border-bottom-width: 2px;
   border-style: solid;
   padding: 15px;
+  width: 58.4%;
 }
 
 .screenshots {
   padding: 0;
+  width: 41.6%;
 }
 
 .screenshots img {
