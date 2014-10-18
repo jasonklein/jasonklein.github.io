@@ -266,6 +266,16 @@ section p {
   background: #FFF100;
 }
 
+/* Contact */
+
+section#contact {
+  height: 150px;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+}
 
 
 
