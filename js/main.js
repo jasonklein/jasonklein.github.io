@@ -28,11 +28,7 @@ PersonalSite.headerAppearance = function() {
       $("#underline").animate({width: "100%"}, 2000, function() {
         $("#role").fadeIn(500, function() {
           $("#text-separator").fadeIn(500, function() {
-            $("#goals").fadeIn(500, function() {
-              $("header .row").delay(600).fadeOut(function() {
-                $("header").delay(450).slideUp("slow")}
-              );
-            });
+            $("#goals").fadeIn(500);
           });
         });
       });
@@ -42,7 +38,7 @@ PersonalSite.headerAppearance = function() {
 
 PersonalSite.setup = function() {
   PersonalSite.headerTextSliding();
-  // PersonalSite.headerAppearance();
+  PersonalSite.headerAppearance();
 };
 
 $(PersonalSite.setup);
