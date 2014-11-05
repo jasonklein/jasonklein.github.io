@@ -27,7 +27,6 @@ header {
   background: url(../img/tpl-asteroids.jpg);
 }
 
-
 #header-bike {
   margin-top: 90px;
   text-align: left;
@@ -77,6 +76,7 @@ header {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* Main */
 
 #main {
@@ -96,6 +96,8 @@ header {
 #other {
   background: url(../img/tpl-science.png);
 }
+=======
+>>>>>>> d78e534fb8e19b427803eaf0abfb0616369e14ea
 
 
 
