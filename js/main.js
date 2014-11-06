@@ -1,9 +1,9 @@
 $(document).ready(function() {
-  var $root = $('html, #content');
+  var $root = $('html, body');
   $('a').click(function() {
     var href = $.attr(this, 'href');
     $root.animate({
-      scrollTop: $(href).offset().top - 100
+      scrollTop: $(href).offset().top + 20
     }, 2000, 'easeInOutExpo');
     return false;
   });
@@ -28,7 +28,13 @@ PersonalSite.headerAppearance = function() {
       $("#underline").animate({width: "100%"}, 2000, function() {
         $("#role").fadeIn(500, function() {
           $("#text-separator").fadeIn(500, function() {
-            $("#goals").fadeIn(500);
+            $("#goals").fadeIn(500, function() {
+              setTimeout(function() {
+                var $root = $('html, body');
+                $root.animate({scrollTop: $("#main").offset().top + 10}, 2000, 'easeInOutExpo');
+                return false;
+              }, 500);
+            });
           });
         });
       });

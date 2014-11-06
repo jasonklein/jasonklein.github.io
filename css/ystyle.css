@@ -13,22 +13,30 @@ body {
 
 section {
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .background-style {
-  height: 100vh;
   background-size: contain;
+}
+
+a {
+  text-decoration: none;
+  color: #00AB4B;
+}
+
+a:hover {
+  color: #00F76C;
 }
 
 /* Header */
 
 header {
   background: url(../img/tpl-asteroids.jpg);
+  height: 100vh;
 }
 
 #header-bike {
-  margin-top: 90px;
+  margin-top: 5vh;
   text-align: left;
   display: none;
 }
@@ -39,7 +47,7 @@ header {
 }
 
 #header-text {
-  margin-top: 150px;
+  margin-top: 10vh;
   color: white;
 }
 
@@ -53,12 +61,14 @@ header {
   display: inline-block;
 }
 
-#header-text #sub-text {
+#sub-text {
   margin: 60px auto 60px 10px;
+  font-size: 40px;
 }
 
-#sub-text {
-  font-size: 40px;
+.sub-text-words {
+  background: rgba(0,0,0,0.25);
+  padding: 0 2px;
 }
 
 #text-separator {
@@ -76,7 +86,6 @@ header {
   width: 100%;
 }
 
-<<<<<<< HEAD
 /* Main */
 
 #main {
@@ -85,10 +94,60 @@ header {
 
 /* Main - Self-Photos */
 
-.selfie img {
+#self-photos {
+}
+
+.selfie {
+  padding: 5px 8px;
+}
+
+.photo-inner {
+  border: 8px solid #FFF100;
+  border-radius: 12px;
+  background: #FFF100;
+}
+
+.photo-inner img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 6px;
+}
+
+/* Main - Self-Description */
+
+#main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#main .row {
+  margin-bottom: 30px;
+}
+
+#hello {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 150px;
+  padding: 0;
+  color: #00F76C;
+}
+
+.main-text-wrapper {
+  line-height: 45px;
+}
+
+.main-text {
+  font-size: 30px;
+  font-weight: bold;
+  background: white;
+  padding: 0 5px;
+}
+
+#down-arrow-wrapper {
+  margin: 50px 0;
+  text-align: center;
+}
+#down-arrow {
+  font-size: 100px;
 }
 
 /* Other */
@@ -96,14 +155,25 @@ header {
 #other {
   background: url(../img/tpl-science.png);
 }
-=======
->>>>>>> d78e534fb8e19b427803eaf0abfb0616369e14ea
+
+/*#io-mayfields {
+  border-color: #1A9BD5;
+  background-color: #1A9BD5;
+}
+
+#stack-text {
+  border-color: #00DE61;
+}
+
+#color-box-stack {
+  background: #00DE61;
+}
+
+#io-upper-rideau {
+  border-left-width: 1px;
+  border-color: #00DE61;
+  background-color: #00DE61;}
 
 
-
-
-
-
-
-
+*/
 
