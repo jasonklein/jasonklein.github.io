@@ -169,19 +169,19 @@ header {
 
 /* Responsiveness - Medium and down */
 
-@media only screen (max-width: 64em) {
+@media only screen and (max-width: 64em) {
 
 }
 
 /* Responsiveness - Medium only */
 
-@media only screen (min-width: 40.063em) and (max-width: 64em) {
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
 }
 
 /* Responsiveness - Small only */ 
 
-@media only screen (max-width: 40em) {
+@media only screen and (max-width: 40em) {
   .mobile-hidden {
     display: none;
   }
@@ -210,7 +210,7 @@ header {
   }
 }
 
-@media only screen (max-width: 40em) and (orientation: portrait) {
+@media only screen and (max-width: 40em) and (orientation: portrait) {
   #header-name {
     font-size: 88px;
     padding: 0;
@@ -224,7 +224,7 @@ header {
   }
 }
 
-@media only screen (max-width: 40em) and (orientation: landscape) {
+@media only screen and (max-width: 40em) and (orientation: landscape) {
   #header-name {
     font-size: 110px;
     padding: 0;
