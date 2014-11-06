@@ -26,7 +26,7 @@ PersonalSite.headerAppearance = function() {
     $("#sub-text-buddy").show();
     $("#underline").show();
     $("#underline").animate({width: "100%"}, 2000, function() {
-      if(window.innerWidth > 640) {
+      if(window.innerWidth > 550) {
         $("#role").fadeIn(500, function() {
           $("#text-separator").fadeIn(500, function() {
             $("#goals").fadeIn(500, PersonalSite.scrollBelowHeader());
