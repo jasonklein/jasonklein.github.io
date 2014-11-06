@@ -170,22 +170,22 @@ header {
 /* Responsiveness - Medium and down */
 
 @media (max-width: 64em) {
-
+  .mobile-hidden {
+    display: none;
+  }
 }
 
 /* Responsiveness - Medium only */
 
 @media (min-width: 40.063em) and (max-width: 64em) {
-
+  .selfie {
+    padding: 15px 24px;
+  }
 }
 
 /* Responsiveness - Small only */ 
 
 @media (max-width: 40em) {
-  .mobile-hidden {
-    display: none;
-  }
-
   .mobile-only {
     display: initial;
   }
