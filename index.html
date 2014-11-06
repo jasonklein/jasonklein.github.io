@@ -10,10 +10,23 @@
     <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Source+Sans+Pro:200,400,600:latin', 'Permanent+Marker::latin', 'Fascinate+Inline::latin', 'Oswald::latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.css" />
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Permanent+Marker|Fascinate+Inline|Oswald' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
