@@ -116,7 +116,7 @@ header {
 }
 
 #hello {
-  font-family: 'Fascinate Inline', cursive;
+  font-family: 'Fascinate Inline', sans-serif;
   font-size: 150px;
   padding: 0;
   color: #00F76C;
@@ -152,7 +152,7 @@ header {
 }
 
 #others-headline {
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', sans-serif;
   font-size: 150px;
   color: #0F5A7C;
   text-align: center;
@@ -201,7 +201,7 @@ header {
     margin-bottom: 30px;
   }
 
-  .main-text {
+  .section-text {
     font-size: 25px;
   }
 
