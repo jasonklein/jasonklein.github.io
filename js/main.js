@@ -40,7 +40,7 @@ PersonalSite.headerAppearance = function() {
 };
 
 PersonalSite.setup = function() {
-  // PersonalSite.headerAppearance();
+  PersonalSite.headerAppearance();
 };
 
 $(PersonalSite.setup);
