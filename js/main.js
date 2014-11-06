@@ -18,6 +18,14 @@ PersonalSite.headerTextSliding = function() {
   });
 };
 
+PersonalSite.scrollBelowHeader = function() {
+  setTimeout(function() {
+    var $root = $('html, body');
+    $root.animate({scrollTop: $("#main").offset().top + 10}, 2000, 'easeInOutExpo');
+    return false;
+  }, 500);
+}
+
 PersonalSite.headerAppearance = function() {
   $(".initially-hide").hide();
   $("#underline").css("width", 0);
@@ -26,17 +34,15 @@ PersonalSite.headerAppearance = function() {
       $("#sub-text-buddy").show();
       $("#underline").show();
       $("#underline").animate({width: "100%"}, 2000, function() {
-        $("#role").fadeIn(500, function() {
-          $("#text-separator").fadeIn(500, function() {
-            $("#goals").fadeIn(500, function() {
-              setTimeout(function() {
-                var $root = $('html, body');
-                $root.animate({scrollTop: $("#main").offset().top + 10}, 2000, 'easeInOutExpo');
-                return false;
-              }, 500);
+        if(window.innerWidth > 640) {
+          $("#role").fadeIn(500, function() {
+            $("#text-separator").fadeIn(500, function() {
+              $("#goals").fadeIn(500, PersonalSite.scrollBelowHeader());
             });
           });
-        });
+        } else {
+          PersonalSite.scrollBelowHeader();
+        };
       });
     });
   });
