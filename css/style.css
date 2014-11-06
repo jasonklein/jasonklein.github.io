@@ -178,8 +178,20 @@ header {
 /* Responsiveness - Medium only */
 
 @media (min-width: 40.063em) and (max-width: 64em) {
+
+  #header-name {
+    font-size: 140px;
+    padding: 0;
+    text-shadow: -4px 4px rgba(26, 155, 213, 0.7);
+    margin-top: 15vh;
+  }
+
+  #sub-text {
+    margin: 40px auto 40px 10px;
+  }
+
   .selfie {
-    padding: 15px 60px;
+    padding: 15px 20px;
   }
 }
 
@@ -192,6 +204,10 @@ header {
 
   .mobile-only {
     display: initial;
+  }
+
+  .small-mobile-hidden {
+    display: none;
   }
 
   #underline {
@@ -215,6 +231,10 @@ header {
 
   #down-arrow {
     font-size: 50px;
+  }
+
+  #attributions .section-text-wrapper {
+    line-height: 30px;
   }
 }
 
