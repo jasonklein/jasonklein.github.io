@@ -44,7 +44,7 @@ PersonalSite.headerAppearance = function() {
 
 PersonalSite.setup = function() {
   PersonalSite.headerTextSliding();
-  PersonalSite.headerAppearance();
+  // PersonalSite.headerAppearance();
 };
 
 $(PersonalSite.setup);
