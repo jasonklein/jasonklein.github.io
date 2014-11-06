@@ -179,13 +179,17 @@ header {
 
 @media (min-width: 40.063em) and (max-width: 64em) {
   .selfie {
-    padding: 15px 24px;
+    padding: 15px 60px;
   }
 }
 
 /* Responsiveness - Small only */ 
 
 @media (max-width: 40em) {
+  .mobile-hidden-text {
+    display: none;
+  }
+
   .mobile-only {
     display: initial;
   }
@@ -196,13 +200,17 @@ header {
   }
 
   #hello {
-    font-size: 90px;
+    font-size: 80px;
     display: block;
     margin-bottom: 30px;
   }
 
   .section-text {
     font-size: 25px;
+  }
+
+  .photo-inner {
+    border: 6px solid #FFF100;
   }
 
   #down-arrow {
