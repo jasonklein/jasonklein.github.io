@@ -1,249 +1,257 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #F2F2F2;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  background: #000;
 }
 
-header {
-  background-color: #FFE102;
-  min-height: 80px;
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
+/* General */
+
+#header-name {
+  font-family: 'Oswald', sans-serif;
 }
 
-#navlinks {
-  float: left;
-  margin-left: 50px;
-  padding-top: 35px;
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-#navlinks a {
-  margin-right: 50px;
-}
-
-#title {
-  float: right;
-}
-
-h1 {
-  display: inline;
-  margin: 14px;
-  padding: 5px;
-  font-size: 80px;
-  color: #FFF;
-}
-
-h2, h3, h4 {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h2 {
-  font-size: 60px;
-  color: #1AA6F7;
-}
-
-
-h3 {
-  font-size: 45px;
-  color: #7F7F7F;
-}
-
-h3.inline-title {
-  display: inline;
-}
-
-h4 {
+.section-text {
   font-size: 30px;
+  font-weight: 600;
+  background: white;
+  padding: 0 5px;
+}
+
+.background-style {
+  background-size: contain;
 }
 
 a {
   text-decoration: none;
-}
-
-a:link {
-  color: #1AA6F7;
-}
-
-a:visited {
-  color: #1AA6F7;
+  color: #00AB4B;
 }
 
 a:hover {
-  color: #1BCAFF;
+  color: #00F76C;
 }
 
-.item-box {
-  border: 2px solid #FFE102;
-  padding: 60px 40px;
-  margin: 30px 0;
-}
-
-.item-box:hover{
-  border: 2px solid #FFF;
-  background-color: #E3E3E3;
-}
-
-.item-box, .project-box {
-  -webkit-transition: all 800ms ease-in-out;
-  -moz-transition: all 800ms ease-in-out;
-  -o-transition: all 800ms ease-in-out;
-  transition: all 800ms ease-in-out;
-}
-
-.welcome {
-  min-height: 400px;
-  padding-top: 100px;
-}
-
-p {
-  margin: 10px 0;
-  text-align: justify;
-}
-
-.image-box {
-  height: 370px;
-  width: 370px;
-  border: 2px solid #FFF;
-  text-align: center;
-  padding-top: 15px;
-  margin-top: 30px;
-}
-
-.project-box {
-  max-width: 350px;
-  margin: 10px auto;
-  padding: 10px;
-  text-align: center;
-  border: 2px solid #FFF;
-  opacity: 0.4;
-}
-
-.serious {
-  min-height: 580px;
-}
-
-.funsies {
-  min-height: 400px;
-}
-
-.project-box:hover{
-  opacity: 1;
-}
-
-.project-description {
-  max-width: 300px;
-  margin: 10px auto;
-}
-
-.mobile-project-description {
+.mobile-only {
   display: none;
 }
 
-.centered {
+/* Header */
+
+header {
+  background: url(../img/tpl-asteroids.jpg);
+  height: 100vh;
+}
+
+#header-text {
+  margin-top: 10vh;
+  color: white;
+}
+
+#header-name {
+  font-size: 220px;
+  padding: 0;
+  text-shadow: -8px 8px rgba(26, 155, 213, 0.7);
+}
+
+#sub-text-wrapper div {
+  display: inline-block;
+}
+
+#sub-text {
+  margin: 60px auto 60px 10px;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.sub-text-words {
+  background: rgba(0,0,0,0.25);
+  padding: 0 2px;
+}
+
+#text-separator {
+  color: #FFF100;
+  margin: 0 15px;
+}
+
+#underline {
+  border-top: 5px solid #1A9BD5;
+  width: 100%;
+}
+
+.widen {
+  width: 100%;
+}
+
+/* Main */
+
+#main {
+  background: url(../img/tpl-leather-nunchuck.png);
+}
+
+/* Main - Self-Photos */
+
+.selfie {
+  padding: 5px 8px;
+}
+
+.photo-inner {
+  border: 8px solid #FFF100;
+  border-radius: 12px;
+  background: #FFF100;
+}
+
+.photo-inner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+/* Main - Self-Descriptions */
+
+#main .row {
+  margin-bottom: 30px;
+}
+
+#hello {
+  font-family: 'Fascinate Inline', cursive;
+  font-size: 150px;
+  padding: 0;
+  color: #00F76C;
+}
+
+.section-text-wrapper {
+  line-height: 45px;
+}
+
+#down-arrow-wrapper {
+  margin: 50px 0;
   text-align: center;
 }
 
-.push {
-  height: 80px;
+#down-arrow {
+  font-size: 100px;
 }
 
-.header-push {
-  height: 140px;
+/* Attribution */
+
+#attributions {
+  margin-top: 80px;
 }
 
-.inner-push {
-  height: 100px;
+#attributions .section-text {
+  font-size: 20px;
 }
 
-@media only screen and (max-width: 64em) {
-  header {
-    min-height: 50px;
-  }
+/* Others */
 
-  #title {
-    float: right;
-  }
+/*#others {
+  background: url(../img/tpl-science.png);
+}
 
-  #navlinks {
+#others-headline {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 150px;
+  color: #0F5A7C;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-wrapper {
+  padding: 10px;
+}
+
+.project-box {
+  background: #0F5A7C;
+}*/
+
+/* Responsiveness - Medium and down */
+
+@media (max-width: 64em) {
+
+}
+
+/* Responsiveness - Medium only */
+
+@media (min-width: 40.063em) and (max-width: 64em) {
+
+}
+
+/* Responsiveness - Small only */ 
+
+@media (max-width: 40em) {
+  .mobile-hidden {
     display: none;
   }
 
-  h1 {
+  .mobile-only {
+    display: initial;
+  }
+
+  #underline {
+    border-top: 3px solid #1A9BD5;
+    width: 100%;
+  }
+
+  #hello {
+    font-size: 90px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .main-text {
+    font-size: 25px;
+  }
+
+  #down-arrow {
     font-size: 50px;
-    margin: 0 5px;
+  }
+}
+
+@media (max-width: 40em) and (orientation: portrait) {
+  #header-name {
+    font-size: 88px;
+    padding: 0;
+    text-shadow: -4px 4px rgba(26, 155, 213, 0.7);
+    margin-top: 20vh;
+    margin-bottom: 30px;
   }
 
-  h2 {
-    font-size: 40px;
-  }
-
-  h3 {
-    font-size: 30px;
-  }
-
-  h4 {
-    font-size: 20px;
-  }
-
-  #title h3 {
+  #sub-text {
     display: none;
   }
+}
 
-  .welcome {
-    min-height: 100px;
-    padding-top: 20px;
+@media (max-width: 40em) and (orientation: landscape) {
+  #header-name {
+    font-size: 110px;
+    padding: 0;
+    text-shadow: -4px 4px rgba(26, 155, 213, 0.7);
+    margin-top: 20vh;
+    margin-bottom: 30px;
   }
 
-  .item-box {
-    padding: 20px 10px;
-    margin: 10px 0;
+  #sub-text {
+    margin: 30px auto 30px 10px;
+    font-size: 28px;
+    font-weight: 200;
   }
 
-  .image-box {
-    height: 240px;
-    width: 240px;
-    padding-top: 15px;
-    margin-top: 0px;
+  .sub-text-words {
+    background: rgba(0,0,0,0.25);
+    padding: 0 2px;
   }
 
-  .image-box img {
-    max-width: 200px;
-    height: auto;
+  #text-separator {
+    color: #FFF100;
+    margin: 0 15px;
+    font-weight: 400;
   }
 
-  .project-box {
-    display: block;
-    opacity: 1;
-    min-height: 200px;
+  .selfie {
+    padding: 15px 24px;
   }
-
-  .project-description {
-    display: none;
-  }
-
-  .mobile-project-description {
-    display: block;
-    text-align: left;
-  }
-
-  .header-push {
-    height: 110px;
-  }
-
-  .inner-push {
-    height: 60px;
-  }
-
-  #about-large-screens-only {
-    display: none;
-  }
-
 }
 

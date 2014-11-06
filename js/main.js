@@ -11,13 +11,6 @@ $(document).ready(function() {
 
 var PersonalSite = PersonalSite || {};
 
-PersonalSite.headerTextSliding = function() {
-  $(".initially-up").hide();
-  $("header .initially-up").delay(700).slideDown(500, "linear", function() {
-    $("#navbar .initially-up").show();
-  });
-};
-
 PersonalSite.scrollBelowHeader = function() {
   setTimeout(function() {
     var $root = $('html, body');
@@ -29,27 +22,24 @@ PersonalSite.scrollBelowHeader = function() {
 PersonalSite.headerAppearance = function() {
   $(".initially-hide").hide();
   $("#underline").css("width", 0);
-  $("#header-bike").show().delay(1000).fadeOut("slow", function() {
-    $("#header-name").fadeIn(800, function() {
-      $("#sub-text-buddy").show();
-      $("#underline").show();
-      $("#underline").animate({width: "100%"}, 2000, function() {
-        if(window.innerWidth > 640) {
-          $("#role").fadeIn(500, function() {
-            $("#text-separator").fadeIn(500, function() {
-              $("#goals").fadeIn(500, PersonalSite.scrollBelowHeader());
-            });
+  $("#header-name").delay(600).fadeIn(800, function() {
+    $("#sub-text-buddy").show();
+    $("#underline").show();
+    $("#underline").animate({width: "100%"}, 2000, function() {
+      if(window.innerWidth > 640) {
+        $("#role").fadeIn(500, function() {
+          $("#text-separator").fadeIn(500, function() {
+            $("#goals").fadeIn(500, PersonalSite.scrollBelowHeader());
           });
-        } else {
-          PersonalSite.scrollBelowHeader();
-        };
-      });
+        });
+      } else {
+        PersonalSite.scrollBelowHeader();
+      };
     });
   });
 };
 
 PersonalSite.setup = function() {
-  PersonalSite.headerTextSliding();
   PersonalSite.headerAppearance();
 };
 
