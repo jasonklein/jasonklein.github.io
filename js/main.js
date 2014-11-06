@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('a').click(function() {
     var href = $.attr(this, 'href');
     $root.animate({
-      scrollTop: $(href).offset().top + 20
+      scrollTop: $(href).offset().top - 100
     }, 2000, 'easeInOutExpo');
     return false;
   });
