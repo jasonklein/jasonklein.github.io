@@ -169,7 +169,7 @@ header {
 
 /* Responsiveness - Medium and down */
 
-@media (max-width: 64em) {
+@media (max-width: 64em) { /* 1024px */
   .mobile-hidden {
     display: none;
   }
@@ -177,7 +177,7 @@ header {
 
 /* Responsiveness - Medium only */
 
-@media (min-width: 40.063em) and (max-width: 64em) {
+@media (min-width: 40.063em) and (max-width: 64em) { /* 641px to 1024px */
 
   #header-name {
     font-size: 140px;
@@ -197,7 +197,7 @@ header {
 
 /* Responsiveness - Small only */ 
 
-@media (max-width: 40em) {
+@media (max-width: 40em) { /* 640px */
   .mobile-hidden-text {
     display: none;
   }
